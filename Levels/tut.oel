@@ -1,0 +1,98 @@
+<level width="1280" height="960">
+  <Background exportMode="GridRectangles" />
+  <Objects>
+    <ExitSign id="4" x="176" y="64" />
+    <Spikes id="0" x="512" y="944" />
+    <Spikes id="6" x="528" y="944" />
+    <Spikes id="7" x="544" y="944" />
+    <Spikes id="8" x="560" y="944" />
+    <Spikes id="9" x="576" y="944" />
+    <Spikes id="10" x="592" y="944" />
+    <Spikes id="11" x="608" y="944" />
+    <Spikes id="12" x="624" y="944" />
+    <Spikes id="1" x="944" y="496" />
+    <Spikes id="3" x="960" y="496" />
+    <Spikes id="14" x="992" y="496" />
+    <Spikes id="15" x="976" y="496" />
+    <Spikes id="16" x="1008" y="496" />
+    <Spikes id="17" x="1024" y="496" />
+    <Spikes id="18" x="1040" y="496" />
+    <Spikes id="19" x="1056" y="496" />
+    <Spikes id="20" x="1072" y="496" />
+    <Spikes id="21" x="1088" y="496" />
+    <Spikes id="22" x="1104" y="496" />
+    <Spikes id="23" x="1120" y="496" />
+    <Spikes id="24" x="1136" y="496" />
+    <Spikes id="25" x="1152" y="496" />
+    <Spikes id="26" x="1168" y="496" />
+    <Spikes id="27" x="704" y="320" />
+    <Spikes id="28" x="720" y="320" />
+    <Spikes id="29" x="736" y="320" />
+    <Spikes id="30" x="752" y="320" />
+    <Spikes id="31" x="768" y="320" />
+    <Spikes id="32" x="784" y="320" />
+    <Spikes id="33" x="800" y="320" />
+    <Spikes id="34" x="816" y="320" />
+    <Spikes id="35" x="832" y="320" />
+    <Spikes id="36" x="848" y="320" />
+    <Spikes id="37" x="864" y="320" />
+    <Spikes id="38" x="880" y="320" />
+    <Spikes id="39" x="896" y="320" />
+    <Spikes id="40" x="912" y="320" />
+    <Spikes id="41" x="928" y="320" />
+    <Spikes id="42" x="944" y="320" />
+    <Spikes id="43" x="960" y="320" />
+    <Spikes id="44" x="976" y="320" />
+    <Spikes id="45" x="992" y="320" />
+    <Spikes id="46" x="1008" y="320" />
+    <Spikes id="47" x="1024" y="320" />
+    <Spikes id="48" x="1040" y="320" />
+    <Spikes id="49" x="1072" y="320" />
+    <Spikes id="50" x="1056" y="320" />
+    <Spikes id="51" x="1088" y="320" />
+    <Spikes id="52" x="1120" y="320" />
+    <Spikes id="53" x="1104" y="320" />
+    <Spikes id="54" x="1136" y="320" />
+    <Spikes id="55" x="1152" y="320" />
+    <Spikes id="56" x="1168" y="320" />
+    <Exit id="5" x="176" y="144" />
+    <Player id="2" x="48" y="944" />
+  </Objects>
+  <Tiles exportMode="GridRectangles">
+    <rect x="0" y="0" w="80" h="1" />
+    <rect x="0" y="1" w="1" h="59" />
+    <rect x="1" y="44" w="4" h="11" />
+    <rect x="1" y="59" w="31" h="1" />
+    <rect x="4" y="11" w="40" h="28" />
+    <rect x="5" y="45" w="57" h="10" />
+    <rect x="6" y="42" w="74" h="1" />
+    <rect x="14" y="1" w="10" h="10" />
+    <rect x="24" y="8" w="20" h="3" />
+    <rect x="40" y="59" w="40" h="1" />
+    <rect x="44" y="21" w="31" h="5" />
+    <rect x="44" y="29" w="1" h="1" />
+    <rect x="44" y="33" w="1" h="1" />
+    <rect x="44" y="37" w="1" h="1" />
+    <rect x="44" y="41" w="36" h="1" />
+    <rect x="46" y="40" w="34" h="1" />
+    <rect x="47" y="31" w="12" h="1" />
+    <rect x="47" y="35" w="33" h="1" />
+    <rect x="47" y="39" w="33" h="1" />
+    <rect x="48" y="30" w="11" h="1" />
+    <rect x="48" y="32" w="32" h="3" />
+    <rect x="48" y="36" w="32" h="3" />
+    <rect x="62" y="48" w="1" h="7" />
+    <rect x="63" y="49" w="2" h="6" />
+    <rect x="65" y="50" w="1" h="5" />
+    <rect x="66" y="51" w="2" h="4" />
+    <rect x="68" y="52" w="1" h="3" />
+    <rect x="69" y="53" w="2" h="2" />
+    <rect x="71" y="54" w="1" h="2" />
+    <rect x="72" y="55" w="2" h="1" />
+    <rect x="73" y="56" w="2" h="1" />
+    <rect x="74" y="8" w="1" h="13" />
+    <rect x="74" y="30" w="6" h="2" />
+    <rect x="79" y="1" w="1" h="29" />
+    <rect x="79" y="43" w="1" h="16" />
+  </Tiles>
+</level>

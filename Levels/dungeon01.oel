@@ -1,0 +1,172 @@
+<level width="2560" height="1920">
+  <Background exportMode="GridRectangles" />
+  <Objects>
+    <Spikes id="0" x="112" y="1792" />
+    <Spikes id="1" x="128" y="1792" />
+    <Spikes id="2" x="192" y="1792" />
+    <Spikes id="3" x="176" y="1792" />
+    <Spikes id="4" x="144" y="1792" />
+    <Spikes id="5" x="160" y="1792" />
+    <Spikes id="6" x="224" y="1792" />
+    <Spikes id="7" x="208" y="1792" />
+    <Spikes id="8" x="240" y="1792" />
+    <Spikes id="9" x="256" y="1792" />
+    <Spikes id="10" x="288" y="1792" />
+    <Spikes id="11" x="272" y="1792" />
+    <Spikes id="12" x="304" y="1792" />
+    <Spikes id="13" x="320" y="1792" />
+    <Spikes id="14" x="336" y="1792" />
+    <Spikes id="15" x="352" y="1792" />
+    <Spikes id="16" x="368" y="1792" />
+    <Spikes id="17" x="384" y="1792" />
+    <Spikes id="18" x="400" y="1792" />
+    <Spikes id="19" x="416" y="1792" />
+    <Spikes id="20" x="432" y="1792" />
+    <Spikes id="21" x="448" y="1792" />
+    <Spikes id="22" x="464" y="1792" />
+    <Spikes id="23" x="480" y="1792" />
+    <Spikes id="24" x="496" y="1792" />
+    <Spikes id="25" x="512" y="1792" />
+    <Spikes id="26" x="528" y="1792" />
+    <Spikes id="27" x="544" y="1792" />
+    <Spikes id="28" x="560" y="1792" />
+    <Spikes id="29" x="576" y="1792" />
+    <Spikes id="30" x="592" y="1792" />
+    <Spikes id="31" x="624" y="1792" />
+    <Spikes id="32" x="608" y="1792" />
+    <Spikes id="33" x="640" y="1792" />
+    <Spikes id="34" x="656" y="1792" />
+    <Spikes id="35" x="672" y="1792" />
+    <Spikes id="36" x="688" y="1792" />
+    <Spikes id="37" x="704" y="1792" />
+    <Spikes id="38" x="720" y="1792" />
+    <Spikes id="39" x="736" y="1792" />
+    <Spikes id="40" x="752" y="1792" />
+    <Spikes id="41" x="768" y="1792" />
+    <Spikes id="42" x="784" y="1792" />
+    <Spikes id="43" x="816" y="1792" />
+    <Spikes id="44" x="800" y="1792" />
+    <Spikes id="45" x="832" y="1792" />
+    <Spikes id="46" x="848" y="1792" />
+    <Spikes id="47" x="864" y="1792" />
+    <Spikes id="48" x="880" y="1792" />
+    <Spikes id="49" x="896" y="1792" />
+    <Spikes id="50" x="928" y="1792" />
+    <Spikes id="51" x="912" y="1792" />
+    <Spikes id="52" x="944" y="1792" />
+    <Spikes id="53" x="960" y="1792" />
+    <Spikes id="54" x="976" y="1792" />
+    <Spikes id="55" x="992" y="1792" />
+    <Spikes id="56" x="1008" y="1792" />
+    <Spikes id="57" x="1040" y="1792" />
+    <Spikes id="58" x="1024" y="1792" />
+    <Spikes id="59" x="1056" y="1792" />
+    <Spikes id="60" x="1072" y="1792" />
+    <Spikes id="61" x="1072" y="1792" />
+    <Spikes id="62" x="1088" y="1792" />
+    <Spikes id="63" x="1104" y="1792" />
+    <Spikes id="64" x="1120" y="1792" />
+    <Spikes id="65" x="1136" y="1792" />
+    <Spikes id="66" x="1168" y="1792" />
+    <Spikes id="67" x="1152" y="1792" />
+    <Spikes id="68" x="1184" y="1792" />
+    <Spikes id="69" x="1200" y="1792" />
+    <Spikes id="70" x="1216" y="1792" />
+    <Spikes id="71" x="1232" y="1792" />
+    <Spikes id="72" x="1264" y="1792" />
+    <Spikes id="73" x="1248" y="1792" />
+    <Spikes id="74" x="1280" y="1792" />
+    <Spikes id="75" x="1296" y="1792" />
+    <Spikes id="76" x="1312" y="1792" />
+    <Spikes id="77" x="1328" y="1792" />
+    <Spikes id="78" x="1344" y="1792" />
+    <Spikes id="79" x="1360" y="1792" />
+    <Spikes id="80" x="1376" y="1792" />
+    <Spikes id="81" x="1392" y="1792" />
+    <Spikes id="82" x="1440" y="1792" />
+    <Spikes id="83" x="1408" y="1792" />
+    <Spikes id="84" x="1424" y="1792" />
+    <Spikes id="85" x="1456" y="1792" />
+    <Spikes id="86" x="1472" y="1792" />
+    <Spikes id="87" x="1488" y="1792" />
+    <Spikes id="88" x="1504" y="1792" />
+    <Spikes id="89" x="1520" y="1792" />
+    <Spikes id="90" x="1536" y="1792" />
+    <Spikes id="91" x="1552" y="1792" />
+    <Spikes id="92" x="1568" y="1792" />
+    <Spikes id="93" x="1584" y="1792" />
+    <Spikes id="94" x="1616" y="1792" />
+    <Spikes id="95" x="1600" y="1792" />
+    <Spikes id="96" x="1632" y="1792" />
+    <Spikes id="97" x="1648" y="1792" />
+    <Spikes id="98" x="1664" y="1792" />
+    <Spikes id="99" x="1680" y="1792" />
+    <Spikes id="100" x="1696" y="1792" />
+    <Spikes id="101" x="1712" y="1792" />
+    <Spikes id="102" x="1728" y="1792" />
+    <Spikes id="103" x="1744" y="1792" />
+    <Spikes id="104" x="1760" y="1792" />
+    <Spikes id="105" x="1776" y="1792" />
+    <Spikes id="106" x="1776" y="1792" />
+    <Spikes id="107" x="1792" y="1792" />
+    <Spikes id="108" x="1808" y="1792" />
+    <Spikes id="109" x="1824" y="1792" />
+    <Spikes id="110" x="1840" y="1792" />
+    <Spikes id="111" x="1856" y="1792" />
+    <Spikes id="112" x="1872" y="1792" />
+    <Spikes id="113" x="1888" y="1792" />
+    <Spikes id="114" x="1904" y="1792" />
+    <Spikes id="115" x="1920" y="1792" />
+    <Spikes id="116" x="1936" y="1792" />
+    <Spikes id="117" x="2432" y="1792" />
+    <Spikes id="118" x="2416" y="1792" />
+    <Spikes id="119" x="2400" y="1792" />
+    <Spikes id="120" x="2368" y="1792" />
+    <Spikes id="121" x="2384" y="1792" />
+    <Spikes id="122" x="2352" y="1792" />
+    <Spikes id="123" x="2336" y="1792" />
+    <Spikes id="124" x="2320" y="1792" />
+    <Spikes id="125" x="2288" y="1792" />
+    <Spikes id="126" x="2304" y="1792" />
+    <Spikes id="127" x="2272" y="1792" />
+    <Spikes id="128" x="2256" y="1792" />
+    <Spikes id="129" x="2240" y="1792" />
+    <Spikes id="130" x="2224" y="1792" />
+    <Spikes id="131" x="2208" y="1792" />
+    <Spikes id="132" x="2208" y="1792" />
+    <Spikes id="133" x="2192" y="1792" />
+    <Spikes id="134" x="2176" y="1792" />
+    <Spikes id="135" x="2144" y="1792" />
+    <Spikes id="136" x="2160" y="1792" />
+    <Spikes id="137" x="2128" y="1792" />
+    <Spikes id="138" x="2112" y="1792" />
+    <Spikes id="139" x="2096" y="1792" />
+    <Spikes id="140" x="2080" y="1792" />
+    <Spikes id="141" x="2064" y="1792" />
+    <Spikes id="142" x="2048" y="1792" />
+    <Spikes id="143" x="2032" y="1792" />
+    <Spikes id="144" x="2016" y="1792" />
+    <Spikes id="145" x="2000" y="1792" />
+    <Spikes id="146" x="1984" y="1792" />
+    <Spikes id="147" x="1984" y="1792" />
+    <Spikes id="148" x="1952" y="1792" />
+    <Spikes id="149" x="1968" y="1792" />
+    <Player id="151" x="128" y="288" />
+  </Objects>
+  <Tiles exportMode="GridRectangles">
+    <rect x="0" y="0" w="160" h="7" />
+    <rect x="0" y="7" w="7" h="113" />
+    <rect x="7" y="20" w="153" h="2" />
+    <rect x="7" y="35" w="153" h="2" />
+    <rect x="7" y="50" w="153" h="2" />
+    <rect x="7" y="65" w="153" h="2" />
+    <rect x="7" y="80" w="153" h="2" />
+    <rect x="7" y="113" w="153" h="7" />
+    <rect x="153" y="7" w="7" h="13" />
+    <rect x="153" y="22" w="7" h="13" />
+    <rect x="153" y="37" w="7" h="13" />
+    <rect x="153" y="52" w="7" h="13" />
+    <rect x="153" y="67" w="7" h="13" />
+    <rect x="153" y="82" w="7" h="31" />
+  </Tiles>
+</level>
