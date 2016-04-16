@@ -1,24 +1,20 @@
 package com.rename 
 {
-	/**
-	 * ...
-	 * @author Josh
-	 */
 	public class Assets 
 	{
 		//Levels
-		[Embed(source="../../../Levels/01.oel", mimeType="application/octet-stream")] public static const LEVEL_1:Class;
-		/*[Embed(source = "../Levels/02.oel", mimeType = "application/octet-stream")] public static const LEVEL_2:Class;
+		/*[Embed(source="../../../Levels/01.oel", mimeType="application/octet-stream")] public static const LEVEL_1:Class;
+		[Embed(source = "../Levels/02.oel", mimeType = "application/octet-stream")] public static const LEVEL_2:Class;
 		[Embed(source = "../Levels/dungeon01.oel", mimeType = "application/octet-stream")]public static const DUNGEON_01:Class;
 		[Embed(source = "../Levels/ForestTest.oel", mimeType = "application/octet-stream")]public static const FOREST_TEST:Class;
 		[Embed(source = "../Levels/tutorial.oel", mimeType = "application/octet-stream")]public static const TUTORIAL:Class;*/
 		[Embed(source="../../../Levels/test.oel", mimeType="application/octet-stream")] public static const TEST:Class;
 		[Embed(source="../../../Levels/IceTest.oel", mimeType="application/octet-stream")] public static const MIKE:Class;
-		public static  const levels:Array = new Array(MIKE, MIKE);
+		public static  const levels:Array = new Array(TEST);
 		
-		/*//Backdrops
-		[Embed(source = "../Textures/Background Art/backgroundImage.png")]public static const MAIN_MENU_BACKDROP:Class;
-		[Embed(source="../Textures/Background Art/night_sky.png")]public static const SKY_NIGHT:Class;*/
+		//Backdrops
+		/*[Embed(source = "../Textures/Background Art/backgroundImage.png")]public static const MAIN_MENU_BACKDROP:Class;*/
+		[Embed(source="../../../Textures/Background Art/night_sky.png")] public static const SKY_NIGHT:Class;
 		
 		//Scenery
 		[Embed(source="../../../Textures/Scenery/Trees.png")] public static const TREES:Class;
@@ -55,9 +51,6 @@ package com.rename
 		
 		//Effects
 		[Embed(source="../../../Textures/Effects/DustTest.png")] public static const DUST:Class;
-	
-		
-		/*
 		
 		/***************************************************************************************************************************************************/
 		//
@@ -72,9 +65,10 @@ package com.rename
 		[Embed(source="../Music/Figure Tunes/Kove Kupi 150519-181821.mp3")]public static const THEME2:Class;
 		[Embed(source="../Music/Figure Tunes/Nagapop 150519-181802.mp3")]public static const THEME3:Class;
 		[Embed(source="../Music/Figure Tunes/Vulva 150519-181752.mp3")]public static const THEME4:Class;
+		*/
 		
 		//Sound Effects
-		[Embed(source = "../Music/Pickup_Coin2.mp3")]public static const PICKUP_COIN:Class;
+		[Embed(source="../../../Music/Pickup_Coin2.mp3")] public static const PICKUP_COIN:Class;
 		
 		
 		

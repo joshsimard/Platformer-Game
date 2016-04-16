@@ -1,6 +1,5 @@
 package com.rename.objects.interactables.physics_based.actor {
 	
-	
 	import com.rename.objects.interactables.physics_based.actor.Actor;
 	import net.flashpunk.graphics.Image;
 	import net.flashpunk.utils.Input;
