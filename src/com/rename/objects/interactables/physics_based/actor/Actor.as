@@ -10,9 +10,6 @@ package com.rename.objects.interactables.physics_based.actor {
 	
 	public class Actor extends PhysicsObject {
 		
-		[Embed(source = "/../res/dbg/Square.png")]
-		public static const sprite:Class;
-		
 		private var acc_x:Number = 6;
 		private var fric_x:Number = 96;
 		private var JUMP_HEIGHT:Number = 7;
@@ -21,7 +18,6 @@ package com.rename.objects.interactables.physics_based.actor {
 		
 		
 		public function Actor(x:int = 0, y:int = 0, graphic:Graphic = null, mask:Mask = null):void { 
-			this.graphic = new Image(sprite);
 			
 			setHitbox(16, 16);
 		}
@@ -51,7 +47,7 @@ package com.rename.objects.interactables.physics_based.actor {
 		protected function jump():void {
 			vsp = -JUMP_HEIGHT;
 			
-			//not working...(tryind to make it so jump doesn't continue when colliding with solid on roof
+			//not working...(tryind to make it so jump doesn't continue when colliding with solid on roof)
 			if (collide("solid", x, y - 1))
 				vsp = 0;
 			
