@@ -14,7 +14,7 @@ package com.rename
 		[Embed(source = "../Levels/tutorial.oel", mimeType = "application/octet-stream")]public static const TUTORIAL:Class;*/
 		[Embed(source="../../../Levels/test.oel", mimeType="application/octet-stream")] public static const TEST:Class;
 		[Embed(source="../../../Levels/IceTest.oel", mimeType="application/octet-stream")] public static const MIKE:Class;
-		public static  const levels:Array = new Array(TEST, MIKE);
+		public static  const levels:Array = new Array(MIKE, MIKE);
 		
 		/*//Backdrops
 		[Embed(source = "../Textures/Background Art/backgroundImage.png")]public static const MAIN_MENU_BACKDROP:Class;
