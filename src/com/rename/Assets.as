@@ -3,14 +3,14 @@ package com.rename
 	public class Assets 
 	{
 		//Levels
-		/*[Embed(source="../../../Levels/01.oel", mimeType="application/octet-stream")] public static const LEVEL_1:Class;
-		[Embed(source = "../Levels/02.oel", mimeType = "application/octet-stream")] public static const LEVEL_2:Class;
+		[Embed(source="../../../Levels/01.oel", mimeType="application/octet-stream")] public static const LEVEL_1:Class;
+		/*[Embed(source = "../Levels/02.oel", mimeType = "application/octet-stream")] public static const LEVEL_2:Class;
 		[Embed(source = "../Levels/dungeon01.oel", mimeType = "application/octet-stream")]public static const DUNGEON_01:Class;
 		[Embed(source = "../Levels/ForestTest.oel", mimeType = "application/octet-stream")]public static const FOREST_TEST:Class;
 		[Embed(source = "../Levels/tutorial.oel", mimeType = "application/octet-stream")]public static const TUTORIAL:Class;*/
 		[Embed(source="../../../Levels/test.oel", mimeType="application/octet-stream")] public static const TEST:Class;
 		[Embed(source="../../../Levels/IceTest.oel", mimeType="application/octet-stream")] public static const MIKE:Class;
-		public static  const levels:Array = new Array(TEST);
+		public static  const levels:Array = new Array(LEVEL_1);
 		
 		//Backdrops
 		/*[Embed(source = "../Textures/Background Art/backgroundImage.png")]public static const MAIN_MENU_BACKDROP:Class;*/
@@ -18,18 +18,19 @@ package com.rename
 		
 		//Scenery
 		[Embed(source="../../../Textures/Scenery/Trees.png")] public static const TREES:Class;
-		[Embed(source="../../../Textures/Scenery/moon.png")] public static const MOON:Class;
+		//[Embed(source="../../../Textures/Scenery/moon.png")] public static const MOON:Class;
 		[Embed(source = "../../../Textures/Scenery/star.png")] public static const STAR:Class;
 		
 		//objects
 		[Embed(source = "../../../Textures/Objects/door.png")] public static const DOOR:Class;
-		[Embed(source="../../../Textures/Objects/coin_map.png")] public static const COIN:Class;
+		[Embed(source = "../../../Textures/Objects/coin_map.png")] public static const COIN:Class;
+		[Embed(source="../../../Textures/Objects/moving_platform.png")] public static const MOVING_PLATFORM:Class;
 		/*
 		[Embed(source = "../Textures/Spritemaps/woodenChest.png")]public static const WOODEN_CHEST:Class;
 		[Embed(source = "../Textures/Tiles/Spikes.png")]public static const SPIKES:Class;
 		[Embed(source = "../Textures/Objects/wooden_crate.png")]public static const CRATE:Class;
 		[Embed(source = "../Textures/Objects/small_key.png")]public static const KEY:Class;
-		[Embed(source="../Textures/Objects/moving_platform.png")]public static const MOVING_PLATFORM:Class;
+		
 		
 		//Spritemaps
 		[Embed(source = "../Textures/Enemies/ghost.png")]public static const GHOST:Class;

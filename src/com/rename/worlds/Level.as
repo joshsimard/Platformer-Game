@@ -10,6 +10,7 @@ package com.rename.worlds {
 	import com.rename.objects.scenery.Tree;
 	import com.rename.objects.scenery.Star;
 	import com.rename.objects.interactables.Coin;
+	import com.rename.objects.interactables.MovingPlatform;
 	import com.rename.objects.particles.Dust;
 	import net.flashpunk.FP;
 	import net.flashpunk.World;
@@ -66,6 +67,7 @@ package com.rename.worlds {
 			loader.registerEntityType(Dust);
 			loader.registerEntityType(Coin);
 			loader.registerEntityType(Star);
+			loader.registerEntityType(MovingPlatform);
 			
 			// Update the level
 			addList(loader.buildLevelAsArray(xml));
