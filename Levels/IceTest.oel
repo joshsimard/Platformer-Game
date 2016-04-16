@@ -2,19 +2,11 @@
   <Background exportMode="GridRectangles" />
   <Objects>
     <Player id="0" x="32" y="400" />
-    <Exit id="1" x="560" y="368" />
-    <Coin id="2" x="128" y="352" />
-    <Coin id="3" x="224" y="320" />
-    <Coin id="4" x="224" y="320" />
-    <Coin id="6" x="192" y="320" />
-    <Coin id="9" x="336" y="368" />
-    <Coin id="11" x="480" y="336" />
-    <Coin id="12" x="448" y="336" />
+    <Exit id="1" x="560" y="400" />
   </Objects>
   <Tiles exportMode="GridRectangles">
-    <rect x="0" y="17" w="33" h="1" />
-    <rect x="0" y="18" w="2" h="12" />
-    <rect x="1" y="16" w="2" h="1" />
+    <rect x="0" y="16" w="40" h="1" />
+    <rect x="0" y="17" w="2" h="13" />
     <rect x="2" y="27" w="18" h="3" />
     <rect x="8" y="24" w="1" h="3" />
     <rect x="12" y="22" w="3" h="3" />
@@ -23,12 +15,13 @@
     <rect x="21" y="25" w="1" h="1" />
     <rect x="23" y="27" w="17" h="2" />
     <rect x="26" y="25" w="5" h="2" />
-    <rect x="28" y="23" w="3" h="2" />
-    <rect x="32" y="16" w="5" h="1" />
-    <rect x="32" y="24" w="2" h="1" />
-    <rect x="35" y="25" w="5" h="1" />
-    <rect x="36" y="17" w="4" h="8" />
-    <rect x="36" y="26" w="4" h="1" />
+    <rect x="28" y="23" w="5" h="1" />
+    <rect x="28" y="24" w="3" h="1" />
+    <rect x="30" y="21" w="5" h="2" />
+    <rect x="32" y="25" w="3" h="1" />
+    <rect x="34" y="24" w="6" h="1" />
+    <rect x="36" y="17" w="4" h="7" />
+    <rect x="36" y="25" w="4" h="2" />
   </Tiles>
   <Tileset tileset="Ice" exportMode="XML">
     <tile x="0" y="17" id="8" />
@@ -75,7 +68,6 @@
     <tile x="7" y="27" id="14" />
     <tile x="7" y="28" id="15" />
     <tile x="7" y="29" id="15" />
-    <tile x="8" y="23" id="3" />
     <tile x="8" y="24" id="17" />
     <tile x="8" y="25" id="21" />
     <tile x="8" y="26" id="21" />
@@ -115,11 +107,11 @@
     <tile x="16" y="27" id="13" />
     <tile x="16" y="28" id="15" />
     <tile x="16" y="29" id="15" />
-    <tile x="17" y="24" id="4" />
+    <tile x="17" y="24" id="6" />
     <tile x="17" y="27" id="13" />
     <tile x="17" y="28" id="15" />
     <tile x="17" y="29" id="15" />
-    <tile x="18" y="24" id="4" />
+    <tile x="18" y="24" id="7" />
     <tile x="18" y="27" id="13" />
     <tile x="18" y="28" id="15" />
     <tile x="18" y="29" id="15" />
@@ -160,32 +152,42 @@
     <tile x="29" y="27" id="14" />
     <tile x="29" y="28" id="15" />
     <tile x="29" y="29" id="15" />
-    <tile x="30" y="23" id="18" />
-    <tile x="30" y="24" id="22" />
-    <tile x="30" y="25" id="22" />
-    <tile x="30" y="26" id="22" />
+    <tile x="30" y="21" id="16" />
+    <tile x="30" y="22" id="20" />
+    <tile x="30" y="23" id="15" />
+    <tile x="30" y="24" id="15" />
+    <tile x="30" y="25" id="15" />
+    <tile x="30" y="26" id="15" />
     <tile x="30" y="27" id="13" />
     <tile x="30" y="28" id="15" />
     <tile x="30" y="29" id="15" />
-    <tile x="31" y="26" id="3" />
+    <tile x="31" y="21" id="14" />
+    <tile x="31" y="22" id="15" />
+    <tile x="31" y="23" id="15" />
     <tile x="31" y="27" id="14" />
     <tile x="31" y="28" id="15" />
     <tile x="31" y="29" id="15" />
-    <tile x="32" y="24" id="4" />
-    <tile x="32" y="26" id="3" />
+    <tile x="32" y="21" id="13" />
+    <tile x="32" y="22" id="15" />
+    <tile x="32" y="23" id="15" />
+    <tile x="32" y="25" id="16" />
     <tile x="32" y="27" id="13" />
     <tile x="32" y="28" id="15" />
     <tile x="32" y="29" id="15" />
-    <tile x="33" y="24" id="4" />
-    <tile x="33" y="26" id="3" />
+    <tile x="33" y="21" id="13" />
+    <tile x="33" y="22" id="15" />
+    <tile x="33" y="25" id="13" />
     <tile x="33" y="27" id="14" />
     <tile x="33" y="28" id="15" />
     <tile x="33" y="29" id="15" />
-    <tile x="34" y="26" id="3" />
+    <tile x="34" y="21" id="18" />
+    <tile x="34" y="22" id="23" />
+    <tile x="34" y="24" id="16" />
+    <tile x="34" y="25" id="15" />
     <tile x="34" y="27" id="13" />
     <tile x="34" y="28" id="15" />
     <tile x="34" y="29" id="15" />
-    <tile x="35" y="25" id="4" />
+    <tile x="35" y="24" id="14" />
     <tile x="35" y="27" id="14" />
     <tile x="35" y="28" id="15" />
     <tile x="35" y="29" id="15" />
