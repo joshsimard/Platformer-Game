@@ -3,10 +3,12 @@ package com.rename.worlds {
 	import com.rename.Assets;
 	import com.rename.objects.HUD.HUDBar;
 	import com.rename.objects.HUD.HUDCoinCount;
+	import com.rename.objects.scenery.Background;
 	import com.rename.ogmoloader.OgmoLoader;
 	import com.rename.objects.interactables.physics_based.actor.Player;
 	import com.rename.objects.interactables.Exit;
 	import com.rename.objects.scenery.Tree;
+	import com.rename.objects.scenery.Star;
 	import com.rename.objects.interactables.Coin;
 	import com.rename.objects.particles.Dust;
 	import net.flashpunk.FP;
@@ -37,6 +39,9 @@ package com.rename.worlds {
 		
 		private function loadFromXML(file:Class):void { 
 			
+			var background:Background = new Background();
+			add(background);
+			
 			// Get the room size
 			var xml:XML = FP.getXML(file);
 			this.width = xml.@width;
@@ -60,6 +65,7 @@ package com.rename.worlds {
 			loader.registerEntityType(Tree);
 			loader.registerEntityType(Dust);
 			loader.registerEntityType(Coin);
+			loader.registerEntityType(Star);
 			
 			// Update the level
 			addList(loader.buildLevelAsArray(xml));
