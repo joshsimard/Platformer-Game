@@ -3,23 +3,20 @@ package com.rename
 	public class Assets 
 	{
 		//Levels
+		[Embed(source="../../../Levels/tutorial.oel", mimeType="application/octet-stream")] public static const TUT:Class;
 		[Embed(source="../../../Levels/01.oel", mimeType="application/octet-stream")] public static const LEVEL_1:Class;
-		/*[Embed(source = "../Levels/02.oel", mimeType = "application/octet-stream")] public static const LEVEL_2:Class;
-		[Embed(source = "../Levels/dungeon01.oel", mimeType = "application/octet-stream")]public static const DUNGEON_01:Class;
-		[Embed(source = "../Levels/ForestTest.oel", mimeType = "application/octet-stream")]public static const FOREST_TEST:Class;
-		[Embed(source = "../Levels/tutorial.oel", mimeType = "application/octet-stream")]public static const TUTORIAL:Class;*/
 		[Embed(source="../../../Levels/test.oel", mimeType="application/octet-stream")] public static const TEST:Class;
 		[Embed(source="../../../Levels/IceTest.oel", mimeType="application/octet-stream")] public static const MIKE:Class;
-		public static  const levels:Array = new Array(LEVEL_1);
+		public static  const levels:Array = new Array(TUT);
 		
 		//Backdrops
-		/*[Embed(source = "../Textures/Background Art/backgroundImage.png")]public static const MAIN_MENU_BACKDROP:Class;*/
-		[Embed(source="../../../Textures/Background Art/night_sky.png")] public static const SKY_NIGHT:Class;
+		[Embed(source = "../../../Textures/Background Art/night_sky.png")] public static const SKY_NIGHT:Class;
+		//[Embed(source = "../Textures/Background Art/backgroundImage.png")]public static const MAIN_MENU_BACKDROP:Class;
 		
 		//Scenery
 		[Embed(source="../../../Textures/Scenery/Trees.png")] public static const TREES:Class;
-		//[Embed(source="../../../Textures/Scenery/moon.png")] public static const MOON:Class;
 		[Embed(source = "../../../Textures/Scenery/star.png")] public static const STAR:Class;
+		//[Embed(source="../../../Textures/Scenery/moon.png")] public static const MOON:Class;
 		
 		//objects
 		[Embed(source = "../../../Textures/Objects/door.png")] public static const DOOR:Class;
@@ -48,7 +45,6 @@ package com.rename
 		
 		//Player
 		[Embed(source="../../../res/dbg/Rectangle.png")] public static const SQUARE:Class;
-		[Embed(source="../../../res/dbg/swag.png")] public static const SWAG:Class;
 		[Embed(source="../../../res/dbg/Ball.png")] public static const BALL:Class;
 		
 		//Effects

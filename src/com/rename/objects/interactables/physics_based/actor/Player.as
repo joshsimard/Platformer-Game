@@ -78,36 +78,40 @@ package com.rename.objects.interactables.physics_based.actor {
 			}
 			move(moveInput);
 			
-			//jump for now
-			if ((Input.pressed(Key.UP) || Input.pressed(Key.W)) && onGround)
+			//jump if not a ball
+			if ((Input.pressed(Key.UP) || Input.pressed(Key.W)) && onGround && form == 0)
 				jump();	
 				
-			//reset the level
-			if (Input.pressed(Key.R) && !dead) {
-				dead = true;
-			}
-				
-			//test the shapeshifting
+			//shapeshift!
 			if (Input.pressed(Key.SHIFT)) {
 				switch(form) {
 					case 0:
-						graphic = playerBall;
-						form = 1;
-						setHitbox(16, 16);
+						doMorphBall();
 						break;
 					case 1:
-						if (!collide("solid", x, y - 12)) {
-							y = y - 12;
-							graphic = playerSquare;
-							form = 0;
-							setHitbox(16, 28);
-						}
+						doMorphSquare();
 						break;
 					default:
 						break;
 				}
 			}
 			
+			//reset the level
+			if (Input.pressed(Key.R) && !dead) {
+				dead = true;
+			}
+			
+			//if dead, kill us
+			if (dead)
+				death();
+				
+			//CAMERA 
+			doCamera();
+		}
+		
+		private function checkCollisions():void
+		{
+			//if colliding with exit, go to next level!
 			if (collide("exit", x, y)) {
 				if (Input.pressed(Key.S) || Input.pressed(Key.DOWN))
 				{
@@ -125,15 +129,28 @@ package com.rename.objects.interactables.physics_based.actor {
 				collisionCoin.collect();
 				FP.world.remove(collisionCoin);
 			}
-			
-			//stops player and calls death()
-			if (dead)
-			{
-				hsp = 0;
-				death();
+		}
+		
+		private function doMorphBall():void
+		{
+			graphic = playerBall;
+			form = 1;
+			setHitbox(16, 16);
+		}
+		
+		private function doMorphSquare():void
+		{
+			//make sure we don't collide with ceiling
+			if (!collide("Solid", x, y-12)) {
+				y = y - 12;
+				graphic = playerSquare;
+				form = 0;
+				setHitbox(16, 28);
 			}
-				
-			//CAMERA 
+		}
+		
+		public function doCamera():void
+		{
 			FP.camera.x = x - FP.halfWidth;
 			FP.camera.y = y - FP.halfHeight;
 			
@@ -151,10 +168,12 @@ package com.rename.objects.interactables.physics_based.actor {
 				FP.camera.y =  Level.instance.height - FP.height;
 		}
 		
-		//Kills the player! HUZZAH!
-		//Also decrements the coins attained in the level
+		//kills player and decrements the coins attained in the level
 		public function death():void
 		{
+			//stop movement in x direction
+			hsp = 0;
+			
 			dead = false;
 			for (var i:int = 0; i < Level.instance.coins; i++)
 			{
