@@ -49,6 +49,7 @@ package com.rename
 		//Player
 		[Embed(source="../../../res/dbg/Square.png")] public static const SQUARE:Class;
 		[Embed(source="../../../res/dbg/swag.png")] public static const SWAG:Class;
+		[Embed(source="../../../res/dbg/Ball.png")] public static const BALL:Class;
 		
 		//Effects
 		[Embed(source="../../../Textures/Effects/DustTest.png")] public static const DUST:Class;

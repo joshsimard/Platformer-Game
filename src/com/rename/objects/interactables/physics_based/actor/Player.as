@@ -2,6 +2,7 @@ package com.rename.objects.interactables.physics_based.actor {
 	
 	import com.rename.objects.interactables.physics_based.actor.Actor;
 	import net.flashpunk.graphics.Image;
+	import net.flashpunk.graphics.Spritemap;
 	import net.flashpunk.utils.Input;
 	import net.flashpunk.utils.Key;
 	import net.flashpunk.FP;
@@ -15,11 +16,18 @@ package com.rename.objects.interactables.physics_based.actor {
 		
 		private var dead:Boolean = false;
 		private var form:int = 0;
+		public var playerSquare:Spritemap = new Spritemap(Assets.SQUARE);
+		public var playerBall:Spritemap = new Spritemap(Assets.BALL, 16, 16);
 		
 		public function Player() {
 			
 			//set the graphic
-			this.graphic = new Image(Assets.SQUARE);
+			this.graphic = playerSquare;
+			
+			//set animations for ball
+			playerBall.add("left", [0, 1, 2, 3], 16);
+			playerBall.add("right", [0, 3, 2, 1], 16);
+			playerBall.add("stand", [0]);
 		}
 		
 		override public function update():void {
@@ -27,6 +35,10 @@ package com.rename.objects.interactables.physics_based.actor {
 			
 			// Assume no movement
 			isMoving = false;
+			
+			//if we aren't moving, and we're a ball, stand still
+			if (form == 1 && hsp == 0)
+				playerBall.play("stand");
 			
 			//if on the ground...
 			if (collide("Solid", x, y + 1)) {
@@ -36,6 +48,11 @@ package com.rename.objects.interactables.physics_based.actor {
 			// Handle movement
 			var moveInput:int = 0;
 			if (Input.check(Key.RIGHT) || Input.check(Key.D)) {
+				
+				if (form == 1) {
+					playerBall.play("right");
+				}
+				
 				moveInput++;
 				
 				//makes sure you're on the ground and gives you a 50% chance to put dust behind you
@@ -51,6 +68,10 @@ package com.rename.objects.interactables.physics_based.actor {
 				if (onGround && FP.rand(100) < 50)
 				{
 					FP.world.add(new Dust(x + 8 + FP.rand(4), y + 2 - FP.rand(3)));
+				}
+				
+				if (form == 1) {
+					playerBall.play("left");
 				}
 			}
 			move(moveInput);
@@ -68,12 +89,14 @@ package com.rename.objects.interactables.physics_based.actor {
 			if (Input.pressed(Key.SHIFT)) {
 				switch(form) {
 					case 0:
-						graphic = new Image(Assets.SWAG);
+						graphic = playerBall;
 						form = 1;
+						setHitbox(16, 16);
 						break;
 					case 1:
-						graphic = new Image(Assets.SQUARE);
+						graphic = playerSquare;
 						form = 0;
+						setHitbox(16, 28);
 						break;
 					default:
 						break;
