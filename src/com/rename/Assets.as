@@ -47,7 +47,7 @@ package com.rename
 		[Embed(source="../../../Textures/HUD/HUD_bar.png")] public static const HUD_BAR:Class;
 		
 		//Player
-		[Embed(source="../../../res/dbg/Square.png")] public static const SQUARE:Class;
+		[Embed(source="../../../res/dbg/Rectangle.png")] public static const SQUARE:Class;
 		[Embed(source="../../../res/dbg/swag.png")] public static const SWAG:Class;
 		[Embed(source="../../../res/dbg/Ball.png")] public static const BALL:Class;
 		

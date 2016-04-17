@@ -24,6 +24,8 @@ package com.rename.objects.interactables.physics_based.actor {
 			//set the graphic
 			this.graphic = playerSquare;
 			
+			setHitbox(16, 28);
+			
 			//set animations for ball
 			playerBall.add("left", [0, 1, 2, 3], 16);
 			playerBall.add("right", [0, 3, 2, 1], 16);
@@ -94,9 +96,12 @@ package com.rename.objects.interactables.physics_based.actor {
 						setHitbox(16, 16);
 						break;
 					case 1:
-						graphic = playerSquare;
-						form = 0;
-						setHitbox(16, 28);
+						if (!collide("solid", x, y - 12)) {
+							y = y - 12;
+							graphic = playerSquare;
+							form = 0;
+							setHitbox(16, 28);
+						}
 						break;
 					default:
 						break;

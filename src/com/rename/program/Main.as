@@ -15,7 +15,7 @@ package com.rename.program
 			super(Settings.SCREEN_WIDTH, Settings.SCREEN_HEIGHT, Settings.TARGET_FPS, Settings.IS_FPS_LOCKED);
 			FP.screen.scale = Settings.SCREEN_SCALE;
 			
-			//FP.console.enable();
+			FP.console.enable();
 		}
 		
 		override public function init():void 
