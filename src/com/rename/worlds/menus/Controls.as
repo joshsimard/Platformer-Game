@@ -14,18 +14,13 @@ package com.rename.worlds.menus
 	import net.flashpunk.utils.Key;
 	import com.rename.Assets;
 	
-	public class MainMenu extends World
-	{
+	public class Controls extends World
+	{		
 		private var  bg:Backdrop;
 		
-		public function MainMenu() 
+		public function Controls() 
 		{
-			
-		}
-		
-		override public function begin():void 
-		{
-			bg = new Backdrop(Assets.MAIN_MENU_BACKDROP);
+			bg = new Backdrop(Assets.CONTROLS_MENU_BACKDROP);
 			addGraphic(bg, 20);
 		}
 		
@@ -35,7 +30,7 @@ package com.rename.worlds.menus
 			
 			if (Input.mousePressed)
 			{
-					FP.world = new Controls();
+					FP.world = new Level(0);
 			}
 		}
 	}

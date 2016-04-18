@@ -7,12 +7,13 @@ package com.rename
 		[Embed(source="../../../Levels/01.oel", mimeType="application/octet-stream")] public static const LEVEL_1:Class;
 		[Embed(source="../../../Levels/test.oel", mimeType="application/octet-stream")] public static const TEST:Class;
 		[Embed(source="../../../Levels/IceTest.oel", mimeType="application/octet-stream")] public static const MIKE:Class;
-		public static  const levels:Array = new Array(TEST);
+		public static  const levels:Array = new Array(TUT, MIKE);
 		
 		//Backdrops
 		[Embed(source = "../../../Textures/Background Art/night_sky.png")] public static const SKY_NIGHT:Class;
 		[Embed(source="../../../Textures/background_jpg.jpg")] public static const MAIN_MENU_BACKDROP:Class;
 		[Embed(source="../../../Textures/Background Art/GameEnd.jpg")] public static const GAME_END_MENU_BACKDROP:Class;
+		[Embed(source="../../../Textures/Background Art/controls.png")] public static const CONTROLS_MENU_BACKDROP:Class;
 		
 		//Scenery
 		[Embed(source="../../../Textures/Scenery/Trees.png")] public static const TREES:Class;
