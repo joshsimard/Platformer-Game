@@ -19,6 +19,7 @@ package com.rename.worlds {
 	import com.rename.program.Sounds;
 	import net.flashpunk.FP;
 	import net.flashpunk.World;
+	import com.rename.program.Controller;
 
 	public class Level extends World {
 		
@@ -36,6 +37,9 @@ package com.rename.worlds {
 		public function Level(level:int):void {
 			this.level = level;
 			levelNum = level;
+
+			//keys should reset on level load
+			Controller.resetKeys();
 			
 			coins = 0;
 			keys = 0;

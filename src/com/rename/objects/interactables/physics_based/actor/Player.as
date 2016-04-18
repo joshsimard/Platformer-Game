@@ -1,6 +1,8 @@
 package com.rename.objects.interactables.physics_based.actor {
 	
+	import com.rename.objects.interactables.LockedDoor;
 	import com.rename.objects.interactables.physics_based.actor.Actor;
+	import com.rename.worlds.menus.GameEnd;
 	import net.flashpunk.graphics.Image;
 	import net.flashpunk.graphics.Spritemap;
 	import net.flashpunk.utils.Input;
@@ -124,6 +126,8 @@ package com.rename.objects.interactables.physics_based.actor {
 					Level.levelNum++;
 					if(Assets.levels.length > Level.levelNum)
 						FP.world = new Level(Level.levelNum);
+					else
+						FP.world = new GameEnd();
 				}
 			}
 			
@@ -152,11 +156,16 @@ package com.rename.objects.interactables.physics_based.actor {
 			}
 			
 			//if colliding with a locked door, if we have key, open door!
-			if (collide("locked_door", x, y)) 
+			if (collide("locked_door", x+1, y) || collide("locked_door", x-1, y)) 
 			{
 				//if we have a key, destroy door!
-				
-				//else, it is solid
+				if (Controller.getKeys() >= 1) {
+					var collisionDoor:LockedDoor = LockedDoor(collide("locked_door", x, y));
+					Controller.decrementKeys();
+					FP.world.remove(collisionDoor);
+				} else { //else, it is solid
+					hsp = 0;
+				}
 			}
 		}
 		

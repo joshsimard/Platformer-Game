@@ -12,11 +12,11 @@ package com.rename
 		//Backdrops
 		[Embed(source = "../../../Textures/Background Art/night_sky.png")] public static const SKY_NIGHT:Class;
 		[Embed(source="../../../Textures/background_jpg.jpg")] public static const MAIN_MENU_BACKDROP:Class;
+		[Embed(source="../../../Textures/Background Art/GameEnd.jpg")] public static const GAME_END_MENU_BACKDROP:Class;
 		
 		//Scenery
 		[Embed(source="../../../Textures/Scenery/Trees.png")] public static const TREES:Class;
 		[Embed(source = "../../../Textures/Scenery/star.png")] public static const STAR:Class;
-		//[Embed(source="../../../Textures/Scenery/moon.png")] public static const MOON:Class;
 		
 		//objects
 		[Embed(source = "../../../Textures/Objects/door.png")] public static const DOOR:Class;
@@ -25,15 +25,7 @@ package com.rename
 		[Embed(source = "../../../Textures/Tiles/Spikes.png")] public static const SPIKES:Class;
 		[Embed(source = "../../../Textures/Objects/small_key.png")] public static const KEY:Class;
 		[Embed(source = "../../../Textures/Objects/wooden_door.png")] public static const LOCKED_DOOR:Class;
-		/*
-		[Embed(source = "../Textures/Spritemaps/woodenChest.png")]public static const WOODEN_CHEST:Class;
-		[Embed(source = "../Textures/Objects/wooden_crate.png")]public static const CRATE:Class;
 		
-		//Spritemaps
-		[Embed(source = "../Textures/Enemies/ghost.png")]public static const GHOST:Class;
-		[Embed(source = "../Textures/Enemies/Plant.png")]public static const PLANT:Class;
-		
-		*/
 		//Tilesets
 		[Embed(source="../../../Textures/Tiles/grass_map.png")] public static const GRASS_TILES:Class;
 		[Embed(source="../../../Textures/Tiles/IceWorld_Tileset.png")] public static const ICE_TILES:Class;

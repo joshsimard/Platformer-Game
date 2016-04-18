@@ -51,5 +51,10 @@ package com.rename.program
 		{
 			return totalKeys;
 		}
+		
+		public static function resetKeys():void
+		{
+			totalKeys = 0;
+		}
 	}
 }
