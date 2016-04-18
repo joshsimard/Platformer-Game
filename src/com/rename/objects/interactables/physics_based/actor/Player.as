@@ -7,9 +7,11 @@ package com.rename.objects.interactables.physics_based.actor {
 	import net.flashpunk.utils.Key;
 	import net.flashpunk.FP;
 	import com.rename.worlds.Level;
+	import com.rename.program.Sounds;
 	import com.rename.Assets;
 	import com.rename.objects.particles.Dust;
 	import com.rename.objects.interactables.Coin;
+	import com.rename.objects.interactables.SmallKey;
 	import com.rename.program.Controller;
 	
 	public class Player extends Actor {
@@ -47,33 +49,37 @@ package com.rename.objects.interactables.physics_based.actor {
 				onGround = true;
 			}
 			
+			//check all collisions
+			checkCollisions();
+			
 			// Handle movement
 			var moveInput:int = 0;
 			if (Input.check(Key.RIGHT) || Input.check(Key.D)) {
 				
-				if (form == 1) {
-					playerBall.play("right");
-				}
-				
 				moveInput++;
 				
-				//makes sure you're on the ground and gives you a 50% chance to put dust behind you
-				if (onGround && FP.rand(100) < 50)
-				{
-					FP.world.add(new Dust(x - 8 -FP.rand(4), y + 2 - FP.rand(3)));
+				if (form == 1) {
+					playerBall.play("right");
+					
+					//makes sure you're on the ground and gives you a 50% chance to put dust behind you
+					if (onGround && FP.rand(100) < 50)
+					{
+						FP.world.add(new Dust(x - 8 -FP.rand(4), y + 2 - FP.rand(3)));
+					}
 				}
 			}
 			if (Input.check(Key.LEFT) || Input.check(Key.A)) { 
-				moveInput--;
 				
-				//makes sure you're on the ground and gives you a 50% chance to put dust behind you
-				if (onGround && FP.rand(100) < 50)
-				{
-					FP.world.add(new Dust(x + 8 + FP.rand(4), y + 2 - FP.rand(3)));
-				}
+				moveInput--;
 				
 				if (form == 1) {
 					playerBall.play("left");
+					
+					//makes sure you're on the ground and gives you a 50% chance to put dust behind you
+					if (onGround && FP.rand(100) < 50)
+					{
+						FP.world.add(new Dust(x + 8 + FP.rand(4), y + 2 - FP.rand(3)));
+					}
 				}
 			}
 			move(moveInput);
@@ -129,6 +135,21 @@ package com.rename.objects.interactables.physics_based.actor {
 				collisionCoin.collect();
 				FP.world.remove(collisionCoin);
 			}
+			
+			//if colliding with key, collect it!
+			if (collide("key", x, y))
+			{
+				var collisionKey:SmallKey = SmallKey(collide("key", x, y));
+				Level.instance.keys++; //increment coins collected in current level
+				collisionKey.collect();
+				FP.world.remove(collisionKey);
+			}
+			
+			//if colliding with enemy, u ded m8!
+			if (collide("enemy", x, y) && !dead)
+			{	
+				dead = true;
+			}
 		}
 		
 		private function doMorphBall():void
@@ -179,6 +200,7 @@ package com.rename.objects.interactables.physics_based.actor {
 			{
 				Controller.decrementCoins();
 			}
+			
 			FP.world = new Level(Level.levelNum);
 		}
 	}

@@ -6,11 +6,11 @@ package com.rename.objects.interactables
 	import net.flashpunk.Sfx;
 	import com.rename.Assets;
 	import com.rename.program.Controller;
+	import com.rename.program.Sounds;
 	
 	public class Coin extends Entity
 	{
 		public var coinSprite:Spritemap = new Spritemap(Assets.COIN, 16, 16);
-		public var pickup_coin:Sfx = new Sfx(Assets.PICKUP_COIN);
 		
 		public function Coin(x:int = 0, y:int = 0)
 		{
@@ -20,8 +20,6 @@ package com.rename.objects.interactables
 			type = "coin";
 			setHitbox(16, 16);
 			
-			pickup_coin.volume = 0.1;
-			
 			graphic = coinSprite;
 			coinSprite.add("play", [0, 1, 2], 4);
 			
@@ -30,7 +28,7 @@ package com.rename.objects.interactables
 		
 		public function collect():void
 		{
-			pickup_coin.play();
+			Sounds.playSound("coin_sfx");
 			Controller.incrementCoins();
 		}
 	}

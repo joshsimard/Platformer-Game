@@ -6,35 +6,21 @@ package com.rename.program
 	 * This class is a controller for the current level (world?).
 	 * 
 	 * 	- Keeps track of total coins obtained in level.
+	 *  - Keeps track of total keys.
 	 * 	- Keep track of lives perhaps?
 	 */
 	public class Controller extends World
 	{
 		private var player:Player;
 		private static var totalCoins:int;
+		private static var totalKeys:int;
 			
 		public function Controller() 
 		{
 			player = Player(add(new Player()));
 			totalCoins = 0;
+			totalKeys = 0;
 		}
-		
-	/*	public function updateCoin():void
-		{
-			// What coins did the player collect this update?
-			var collectedCoins:Vector.<Coin> = new Vector.<Coin>();
-			player.collideInto("coin", player.x, player.y, collectedCoins);
-
-			if (collectedCoins.length > 0)
-			{
-				// Yay player! You got some coins!
-				for each (var collectedCoin:Coin in collectedCoins)
-				{
-					// Remove the coins, play a little song, whatever.
-					collectedCoin.collect();
-				}
-			}
-		}	*/
 		
 		public static function incrementCoins():void
 		{
@@ -49,6 +35,21 @@ package com.rename.program
 		public static function getCoins():int
 		{
 			return totalCoins;
+		}
+		
+		public static function incrementKeys():void
+		{
+			totalKeys++;
+		}
+		
+		public static function decrementKeys():void
+		{
+			totalKeys--;
+		}
+		
+		public static function getKeys():int
+		{
+			return totalKeys;
 		}
 	}
 }

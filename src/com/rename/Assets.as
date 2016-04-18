@@ -7,7 +7,7 @@ package com.rename
 		[Embed(source="../../../Levels/01.oel", mimeType="application/octet-stream")] public static const LEVEL_1:Class;
 		[Embed(source="../../../Levels/test.oel", mimeType="application/octet-stream")] public static const TEST:Class;
 		[Embed(source="../../../Levels/IceTest.oel", mimeType="application/octet-stream")] public static const MIKE:Class;
-		public static  const levels:Array = new Array(TUT);
+		public static  const levels:Array = new Array(TEST);
 		
 		//Backdrops
 		[Embed(source = "../../../Textures/Background Art/night_sky.png")] public static const SKY_NIGHT:Class;
@@ -21,13 +21,12 @@ package com.rename
 		//objects
 		[Embed(source = "../../../Textures/Objects/door.png")] public static const DOOR:Class;
 		[Embed(source = "../../../Textures/Objects/coin_map.png")] public static const COIN:Class;
-		[Embed(source="../../../Textures/Objects/moving_platform.png")] public static const MOVING_PLATFORM:Class;
+		[Embed(source = "../../../Textures/Objects/moving_platform.png")] public static const MOVING_PLATFORM:Class;
+		[Embed(source = "../../../Textures/Tiles/Spikes.png")] public static const SPIKES:Class;
+		[Embed(source="../../../Textures/Objects/small_key.png")] public static const KEY:Class;
 		/*
 		[Embed(source = "../Textures/Spritemaps/woodenChest.png")]public static const WOODEN_CHEST:Class;
-		[Embed(source = "../Textures/Tiles/Spikes.png")]public static const SPIKES:Class;
 		[Embed(source = "../Textures/Objects/wooden_crate.png")]public static const CRATE:Class;
-		[Embed(source = "../Textures/Objects/small_key.png")]public static const KEY:Class;
-		
 		
 		//Spritemaps
 		[Embed(source = "../Textures/Enemies/ghost.png")]public static const GHOST:Class;
@@ -55,15 +54,10 @@ package com.rename
 		//																				SOUNDS
 		//
 		/**************************************************************************************************************************************************/
-		/*
+		
 		//Music
-		[Embed(source = "../Music/Theme/9-bit Expedition.mp3")]public static const TEST_THEME:Class;
-		[Embed(source="../Music/Figure Tunes/Testina 150519-181739.mp3")]public static const MAIN_THEME:Class;
-		[Embed(source="../Music/Figure Tunes/Gusivysari 150519-181929.mp3")]public static const THEME1:Class;
-		[Embed(source="../Music/Figure Tunes/Kove Kupi 150519-181821.mp3")]public static const THEME2:Class;
-		[Embed(source="../Music/Figure Tunes/Nagapop 150519-181802.mp3")]public static const THEME3:Class;
-		[Embed(source="../Music/Figure Tunes/Vulva 150519-181752.mp3")]public static const THEME4:Class;
-		*/
+		[Embed(source = "../../../Music/Figure Tunes/Nagapop_clean.mp3")] public static const MAIN_THEME:Class;
+		[Embed(source="../../../Music/Figure Tunes/Gusivysari_clean.mp3")] public static const ICE_THEME:Class;
 		
 		//Sound Effects
 		[Embed(source="../../../Music/Pickup_Coin2.mp3")] public static const PICKUP_COIN:Class;

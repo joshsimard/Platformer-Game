@@ -7,6 +7,8 @@ package com.rename.program
 	import net.flashpunk.Engine;
 	import net.flashpunk.Sfx;
 	import net.flashpunk.FP;
+	import com.rename.Assets;
+	import com.rename.program.Sounds;
 	
 	public class Main extends Engine
 	{
@@ -15,13 +17,12 @@ package com.rename.program
 			super(Settings.SCREEN_WIDTH, Settings.SCREEN_HEIGHT, Settings.TARGET_FPS, Settings.IS_FPS_LOCKED);
 			FP.screen.scale = Settings.SCREEN_SCALE;
 			
-			FP.console.enable();
+			//FP.console.enable();
 		}
 		
 		override public function init():void 
 		{
-			//var theme:Sfx = new Sfx(Assets.MAIN_THEME);
-			//theme.loop();
+			Sounds.playSound("main_theme", true);
 			FP.world = new MainMenu();
 		}
 	}

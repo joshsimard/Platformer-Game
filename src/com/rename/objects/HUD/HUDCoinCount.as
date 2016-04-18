@@ -7,7 +7,6 @@ package com.rename.objects.HUD
 	import com.rename.Assets;
 	/**
 	 * A text that keeps a count of the total coins collected.
-	 * @author Josh
 	 */
 	public class HUDCoinCount extends Entity
 	{
