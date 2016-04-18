@@ -11,7 +11,7 @@ package com.rename
 		
 		//Backdrops
 		[Embed(source = "../../../Textures/Background Art/night_sky.png")] public static const SKY_NIGHT:Class;
-		//[Embed(source = "../Textures/Background Art/backgroundImage.png")]public static const MAIN_MENU_BACKDROP:Class;
+		[Embed(source="../../../Textures/background_jpg.jpg")] public static const MAIN_MENU_BACKDROP:Class;
 		
 		//Scenery
 		[Embed(source="../../../Textures/Scenery/Trees.png")] public static const TREES:Class;
@@ -23,7 +23,8 @@ package com.rename
 		[Embed(source = "../../../Textures/Objects/coin_map.png")] public static const COIN:Class;
 		[Embed(source = "../../../Textures/Objects/moving_platform.png")] public static const MOVING_PLATFORM:Class;
 		[Embed(source = "../../../Textures/Tiles/Spikes.png")] public static const SPIKES:Class;
-		[Embed(source="../../../Textures/Objects/small_key.png")] public static const KEY:Class;
+		[Embed(source = "../../../Textures/Objects/small_key.png")] public static const KEY:Class;
+		[Embed(source = "../../../Textures/Objects/wooden_door.png")] public static const LOCKED_DOOR:Class;
 		/*
 		[Embed(source = "../Textures/Spritemaps/woodenChest.png")]public static const WOODEN_CHEST:Class;
 		[Embed(source = "../Textures/Objects/wooden_crate.png")]public static const CRATE:Class;
@@ -47,7 +48,9 @@ package com.rename
 		[Embed(source="../../../res/dbg/Ball.png")] public static const BALL:Class;
 		
 		//Effects
-		[Embed(source="../../../Textures/Effects/DustTest.png")] public static const DUST:Class;
+		[Embed(source = "../../../Textures/Effects/DustTest.png")] public static const DUST:Class;
+		
+		
 		
 		/***************************************************************************************************************************************************/
 		//
@@ -70,9 +73,9 @@ package com.rename
 		//																				FONTS
 		//
 		/**************************************************************************************************************************************************/
-		/*
-		[Embed(source = "Fonts/Vlaanderen/VLAANDE1.TTF", embedAsCFF = "false", fontFamily = 'vlaand')]public static const VLAANDEREN1:Class;
-		*/
+
+		[Embed(source = "../../../Fonts/Vlaanderen/VLAANDE1.TTF", embedAsCFF = "false", fontFamily = 'vlaand')] public static const VLAANDEREN1:Class;
+
 	
 	}
 

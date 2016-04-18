@@ -41,7 +41,7 @@ package com.rename.objects.interactables
             }
 			
 			//change to type "movingPlatform"
-			type = "solid";
+			type = "Solid";
 			setHitbox(48, 8);
         }
         
