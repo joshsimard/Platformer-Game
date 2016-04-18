@@ -150,6 +150,14 @@ package com.rename.objects.interactables.physics_based.actor {
 			{	
 				dead = true;
 			}
+			
+			//if colliding with a locked door, if we have key, open door!
+			if (collide("locked_door", x, y)) 
+			{
+				//if we have a key, destroy door!
+				
+				//else, it is solid
+			}
 		}
 		
 		private function doMorphBall():void

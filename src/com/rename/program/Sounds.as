@@ -43,8 +43,6 @@ package com.rename.program
 					soundfx.play(0.5);
 					break;
 				default:
-					soundfx = new Sfx(Assets.MAIN_THEME);
-					soundfx.play();
 					break;
 			}
 			

@@ -14,7 +14,7 @@ package com.rename.objects.HUD
 		
 		public function HUDKeyCount() 
 		{
-			//Text.font = "vlaand";
+			Text.font = "vlaand";
 			
 			HUD_key_count = new Text("0", FP.camera.x, FP.camera.y);
 			HUD_key_count.color = 0xFFFFFF;

@@ -4,9 +4,20 @@ package com.rename.worlds.menus
 	import net.flashpunk.World;
 	import net.flashpunk.FP;
 	import net.flashpunk.utils.Input;
+	import flash.display.Bitmap;
+	import flash.display.BitmapData;
+	import net.flashpunk.graphics.Backdrop;
+	import net.flashpunk.graphics.Emitter;
+	import net.flashpunk.graphics.Text;
+	import net.flashpunk.tweens.misc.VarTween;
+	import net.flashpunk.utils.Ease;
+	import net.flashpunk.utils.Key;
+	import com.rename.Assets;
 	
 	public class MainMenu extends World
 	{
+		private var  bg:Backdrop;
+		
 		public function MainMenu() 
 		{
 			
@@ -14,7 +25,8 @@ package com.rename.worlds.menus
 		
 		override public function begin():void 
 		{
-			
+			bg = new Backdrop(Assets.MAIN_MENU_BACKDROP);
+			addGraphic(bg, 20);
 		}
 		
 		override public function update():void 

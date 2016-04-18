@@ -31,7 +31,7 @@ package com.rename.objects.scenery
 			sprite.add("flux", [0, 1], 2, true);
 			graphic = sprite;
 			
-			layer = 5;
+			layer = 6;
 		}
 		
 		override public function update():void 

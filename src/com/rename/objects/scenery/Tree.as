@@ -38,6 +38,8 @@ package com.rename.objects.scenery
 			duration = 0.5 + FP.random;
 			
 			graphic = sprite;
+			
+			layer = 5;
 		}
 		
 	

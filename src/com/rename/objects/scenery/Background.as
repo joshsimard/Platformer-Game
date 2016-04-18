@@ -14,8 +14,8 @@ package com.rename.objects.scenery
 			
 			graphic = backdrop;
 			
-			//backdrop.alpha = 0.5;
-			layer = 5;
+			layer = 20;
+			
 			super(x, y, graphic);
 		}
 		

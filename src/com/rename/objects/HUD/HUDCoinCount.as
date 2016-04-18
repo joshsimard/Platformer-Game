@@ -14,7 +14,7 @@ package com.rename.objects.HUD
 		
 		public function HUDCoinCount() 
 		{
-			//Text.font = "vlaand";
+			Text.font = "vlaand";
 			
 			HUD_coin_count = new Text("0", FP.camera.x, FP.camera.y);
 			HUD_coin_count.color = 0xFFFFFF;

@@ -11,6 +11,7 @@ package com.rename.worlds {
 	import com.rename.objects.scenery.Tree;
 	import com.rename.objects.scenery.Star;
 	import com.rename.objects.interactables.Coin;
+	import com.rename.objects.interactables.LockedDoor;
 	import com.rename.objects.interactables.SmallKey;
 	import com.rename.objects.interactables.Spikes;
 	import com.rename.objects.interactables.MovingPlatform;
@@ -91,6 +92,7 @@ package com.rename.worlds {
 			loader.registerEntityType(MovingPlatform);
 			loader.registerEntityType(Spikes);
 			loader.registerEntityType(SmallKey);
+			loader.registerEntityType(LockedDoor);
 			
 			// Update the level
 			addList(loader.buildLevelAsArray(xml));
@@ -98,9 +100,6 @@ package com.rename.worlds {
 		
 		private function selectTheme():void {
 			switch(levelNum) {
-				case 0:
-					Sounds.playSound("main_theme", true);
-					break;
 				case 2:
 					Sounds.playSound("ice_theme", true);
 					break;
