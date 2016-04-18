@@ -164,29 +164,42 @@
     <tile x="31" y="21" id="14" />
     <tile x="31" y="22" id="15" />
     <tile x="31" y="23" id="15" />
+    <tile x="31" y="24" id="0" />
+    <tile x="31" y="25" id="0" />
+    <tile x="31" y="26" id="0" />
     <tile x="31" y="27" id="14" />
     <tile x="31" y="28" id="15" />
     <tile x="31" y="29" id="15" />
     <tile x="32" y="21" id="13" />
     <tile x="32" y="22" id="15" />
     <tile x="32" y="23" id="15" />
+    <tile x="32" y="24" id="0" />
     <tile x="32" y="25" id="16" />
+    <tile x="32" y="26" id="0" />
     <tile x="32" y="27" id="13" />
     <tile x="32" y="28" id="15" />
     <tile x="32" y="29" id="15" />
     <tile x="33" y="21" id="13" />
     <tile x="33" y="22" id="15" />
+    <tile x="33" y="23" id="0" />
+    <tile x="33" y="24" id="0" />
     <tile x="33" y="25" id="13" />
+    <tile x="33" y="26" id="0" />
     <tile x="33" y="27" id="14" />
     <tile x="33" y="28" id="15" />
     <tile x="33" y="29" id="15" />
     <tile x="34" y="21" id="18" />
     <tile x="34" y="22" id="23" />
+    <tile x="34" y="23" id="0" />
     <tile x="34" y="24" id="16" />
     <tile x="34" y="25" id="15" />
+    <tile x="34" y="26" id="0" />
     <tile x="34" y="27" id="13" />
     <tile x="34" y="28" id="15" />
     <tile x="34" y="29" id="15" />
+    <tile x="35" y="21" id="0" />
+    <tile x="35" y="22" id="0" />
+    <tile x="35" y="23" id="0" />
     <tile x="35" y="24" id="14" />
     <tile x="35" y="27" id="14" />
     <tile x="35" y="28" id="15" />
