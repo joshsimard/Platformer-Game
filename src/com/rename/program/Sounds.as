@@ -42,6 +42,10 @@ package com.rename.program
 					soundfx = new Sfx(Assets.PICKUP_COIN);
 					soundfx.play(0.5);
 					break;
+				case "key_sfx":
+					soundfx = new Sfx(Assets.PICKUP_KEY);
+					soundfx.play();
+					break;
 				default:
 					break;
 			}

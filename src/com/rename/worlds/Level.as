@@ -104,7 +104,7 @@ package com.rename.worlds {
 		
 		private function selectTheme():void {
 			switch(levelNum) {
-				case 2:
+				case 1:
 					Sounds.playSound("ice_theme", true);
 					break;
 				default:

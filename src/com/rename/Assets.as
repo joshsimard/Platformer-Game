@@ -3,11 +3,9 @@ package com.rename
 	public class Assets 
 	{
 		//Levels
-		[Embed(source="../../../Levels/tutorial.oel", mimeType="application/octet-stream")] public static const TUT:Class;
 		[Embed(source="../../../Levels/01.oel", mimeType="application/octet-stream")] public static const LEVEL_1:Class;
-		[Embed(source="../../../Levels/test.oel", mimeType="application/octet-stream")] public static const TEST:Class;
-		[Embed(source="../../../Levels/IceTest.oel", mimeType="application/octet-stream")] public static const MIKE:Class;
-		public static  const levels:Array = new Array(TUT, MIKE);
+		[Embed(source="../../../Levels/IceTest.oel", mimeType="application/octet-stream")] public static const LEVEL_2:Class;
+		public static  const levels:Array = new Array(LEVEL_1, LEVEL_2);
 		
 		//Backdrops
 		[Embed(source = "../../../Textures/Background Art/night_sky.png")] public static const SKY_NIGHT:Class;
@@ -56,7 +54,8 @@ package com.rename
 		[Embed(source="../../../Music/Figure Tunes/Gusivysari_clean.mp3")] public static const ICE_THEME:Class;
 		
 		//Sound Effects
-		[Embed(source="../../../Music/Pickup_Coin2.mp3")] public static const PICKUP_COIN:Class;
+		[Embed(source = "../../../Music/Pickup_Coin2.mp3")] public static const PICKUP_COIN:Class;
+		[Embed(source = "../../../Music/key2 pickup.mp3")] public static const PICKUP_KEY:Class;
 		
 		
 		
